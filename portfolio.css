@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background:black;
+    color: #fff;
+}
+#header{
+       width: 100%;
+       height: 100vh;
+       background-size: cover;
+       background-position: center;
+}
+.container{
+    padding: 10px 10%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    float: right; 
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    color: #fff;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    color: #fff;
+
+}
+nav ul li a::after{
+    content:'';
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+nav ul li a i{
+    text-decoration: none;
+    font-size:30px ;
+    display: inline-block;
+    color: #ff004f;
+}
+
+.header-text{
+    margin-top: 10%;
+    font-size: 30px;
+    float: left;
+}
+.header-text h1{
+    margin-top: 10%;
+    font-size: 45px;
+    color:#fff;
+}
+.header-text h3{
+    margin-top: 3%;
+    font-size: 30px;
+    color: #808080;
+}
+/*------------about-------*/
+#about{
+    padding: 80px 0;
+    color:#ff004f;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+ width: 100%;
+ border-radius: 15px;
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+.sub{
+    font-size: 60px;
+    font-weight: 600;
+}
+.title{
+color:#fff;
+padding: 3% 0;
+}
+nav ul li{
+    font-size: 20px;
+    word-spacing: 7.5px;
+    color:#808080;
+    
+} 
+
+nav p{
+    padding: 4% 0;
+    font-size: 18px;
+    color: #fff;
+}
+/*--------skill-----*/
+#skill{
+    padding: 80px 0;
+}
+.title{
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+}
+.skill-bar p{
+    font-size: 20px;
+    word-spacing: 7.5px;
+    color:#808080; 
+    
+}
+.skill-bar progress{
+    background-color: #ff004f;
+    width: 65%;
+    height: 2%;
+    border: #ff004f;
+    border-radius: 10px;
+    animation: subtitle 2.5s 1;
+}
+
+@keyframes subtitle {
+    from{
+        width: 0;
+    }
+    to{
+        width: 65%;
+    }
+}
+
+
+/*---------contact----*/
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-rigth{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p i{
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.socialicon{
+    margin-top: 30px;
+}
+.socialicon a{
+    text-decoration: none;
+    font-size:30px ;
+    margin-right: 15px;
+    display: inline-block;
+    color: #ff004f;
+}
+.btn.btn2{
+    display: inline-block;
+    background: #ff004f;
+    color: #fff;
+    height: 40px;
+    width: 50%;
+    border-radius: 6px;
+    text-align: center;
+}
+.contact-rigth form{
+    width: 100%;
+}
+form input,form textarea{
+    width: 100%;
+    border: 0;
+    outline:none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 18px;
+}
+.copyrigth{
+    width: 100%;
+    text-align: center;
+    padding:25px 0 ;
+    background:#262626;
+    margin-top: 20px;
+    font-weight: 300;
+}
+form.btn2{
+    padding: 14px 60px;
+    font-size:18px ;
+    margin-top: 20px;
+    cursor: pointer;
+}
