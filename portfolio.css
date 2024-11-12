@@ -115,6 +115,7 @@ nav p{
     font-size: 18px;
     color:#ff004f;
     text-align: justify;
+  text-justify: inter-word;
 }
 /*--------skill-----*/
 #skill{
